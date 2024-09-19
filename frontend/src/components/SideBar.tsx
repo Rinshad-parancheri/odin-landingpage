@@ -1,9 +1,13 @@
-import React from 'react'
+import { SidebarHeader } from "./sideBarComponent/SidebarHeader";
+import { SidebarNavigation } from "./sideBarComponent/SidebarNavigation";
 
-const SideBar = () => {
+const Sidebar: React.FC = () => {
   return (
-    <div>SideBar</div>
-  )
-}
+    <aside className="w-full bg-blue-500 h-screen">
+      <SidebarHeader />
+      <SidebarNavigation />
+    </aside>
+  );
+};
 
-export default SideBar
+export default Sidebar;
